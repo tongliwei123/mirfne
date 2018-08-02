@@ -1,0 +1,13 @@
+{
+  "miniprogramRoot": "./dist",
+  "projectname": "mirfne",
+  "description": "",
+  "appid": "wx3b6b7304c0f0dfbc",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": true,
+    "minified": false
+  },
+  "compileType": "miniprogram"
+}
