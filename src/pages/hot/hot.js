@@ -1,10 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View } from '@tarojs/components'
-import './complaints.scss'
+import './hot.scss'
 
-class Complaints extends Component {
+class Hot extends Component {
   config = {
-    navigationBarTitleText: '品牌分类'
+    navigationBarTitleText: '爆款推荐'
   }
 
   componentWillMount () { }
@@ -28,5 +28,5 @@ class Complaints extends Component {
   }
 }
 
-export default Complaints;
+export default Hot;
 

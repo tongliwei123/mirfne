@@ -1,10 +1,11 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
 import './index.scss'
+import ProductComponent from '../../components/productComponent/productComponent';
 
 export default class Index extends Component {
   config = {
-    navigationBarTitleText: '热门推荐'
+    navigationBarTitleText: '所有商品'
   }
 
   componentWillMount () { }
@@ -22,7 +23,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>爆款</Text>
+        <ProductComponent class='production' />
       </View>
     )
   }
