@@ -1,31 +1,16 @@
 import Taro, { Component } from "@tarojs/taro";
-import { View, Image, Text } from "@tarojs/components";
+import { View, Image } from "@tarojs/components";
 import "./me.scss";
+import me from '../../images/me.jpg'
 
 export default class Me extends Component {
   config = {
-    navigationBarTitleText: "购买"
-  };
-
-  state = {
-    nickName: "",
-    avatarUrl: ""
+    navigationBarTitleText: "联系我们"
   };
 
   componentWillMount() {}
 
-  componentDidMount() {
-    Taro.getStorage({
-      key: "userInfo",
-      success: res => {
-        console.log(res);
-        this.setState({
-          nickName: res.data.nickName,
-          avatarUrl: res.data.avatarUrl
-        });
-      }
-    });
-  }
+  componentDidMount() {}
 
   componentWillUnmount() {}
 
@@ -35,13 +20,8 @@ export default class Me extends Component {
 
   render() {
     return (
-      <View className='containe'>
-        <View className='imageContainer'>
-          <Image className='avatar' src={this.state.avatarUrl} lazyLoad />
-          <View>
-          <Text>{this.state.nickName}</Text>
-        </View>
-        </View>
+      <View className='container'>
+          <Image className='background' mode='widthFix' src={me} lazyLoad />
       </View>
     );
   }

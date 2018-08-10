@@ -1,11 +1,54 @@
 @import '../../styleSheets/Styles.scss';
 
-.index {
-    padding: 0 40px;
-    height: 100vh;
-    background-color:#ffffcc;
+.productContainer {
+    margin: 20px 20px 0;
 }
 
-.production {
-    width: 50%;
+.title {
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.product {
+    width: 330px;
+    height: 190px;
+    border-radius: 10px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.left, .right {
+    margin-top: 20px;
+    box-shadow: 5px 5px 5px #888;
+    border-radius: 10px;
+}
+
+.bagName {
+    padding-bottom: 12px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.swiper {
+    height: 430px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: red;
 }
