@@ -1,5 +1,33 @@
-@import '../../styleSheets/Styles.scss';
+@import "../../styleSheets/Styles.scss";
 
 .index {
-    font-size: $fintSizeBig;
+  font-size: $fintSizeBig;
 }
+
+.masonry {
+  column-count: 2;
+  column-gap: 0;
+}
+.item {
+  break-inside: avoid;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.item-content {
+    width: 100%;
+}
+
+// .masonry {
+//   column-count: 3;
+// }
+// @media (min-width: 400px) {
+//   .masonry {
+//     column-count: 2;
+//   }
+// }
+// @media (min-width: 1200px) {
+//   .masonry {
+//     column-count: 3;
+//   }
+// }
